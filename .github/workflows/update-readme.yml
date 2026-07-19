@@ -1,0 +1,69 @@
+# Roda o "Dev Log" do README uma vez por semana.
+# Escolhe uma frase da lista com base no número da semana e só faz commit se mudar.
+name: update-devlog
+
+on:
+  schedule:
+    - cron: "23 6 * * 1" # segundas-feiras, 06:23 UTC
+  workflow_dispatch: {} # permite testar manualmente
+
+permissions:
+  contents: write
+
+concurrency:
+  group: devlog
+  cancel-in-progress: true
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rotate dev log quote
+        run: |
+          python3 - <<'EOF'
+          import datetime, pathlib, re
+
+          quotes = [
+              "Today's status: it compiles. Asking for more would be greedy.",
+              "Lesson of the week: the bug is never where you are looking. Ever.",
+              "Currently turning coffee into questionable commits.",
+              "Still waiting for the code to work on the first try. Any day now.",
+              "Deleted 40 lines of code today. Best feature I ever shipped.",
+              "Semester status: debugging my degree, one deadline at a time.",
+              "git push origin hope",
+              "The rubber duck heard things this week it can never unhear.",
+          ]
+
+          week = datetime.date.today().isocalendar()[1]
+          quote = quotes[week % len(quotes)]
+
+          path = pathlib.Path("README.md")
+          text = path.read_text(encoding="utf-8")
+          new_block = f"<!--DEVLOG:START-->\n> **week {week:02d}** — {quote}\n<!--DEVLOG:END-->"
+          new_text = re.sub(
+              r"<!--DEVLOG:START-->.*?<!--DEVLOG:END-->",
+              new_block,
+              text,
+              flags=re.S,
+          )
+          if new_text != text:
+              path.write_text(new_text, encoding="utf-8")
+              print("Dev log updated.")
+          else:
+              print("No change needed.")
+          EOF
+
+      - name: Commit if changed
+        run: |
+          if ! git diff --quiet README.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: rotate dev log quote"
+            git push
+          else
+            echo "Nothing to commit."
+          fi

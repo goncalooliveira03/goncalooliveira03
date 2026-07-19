@@ -1,0 +1,36 @@
+# Gera a animação "snake" que come as contribuições e publica-a no branch `output`.
+# O README lê os SVGs de raw.githubusercontent.com/.../output/.
+name: generate-snake
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # uma vez por dia, 04:17 UTC (hora "estranha" para evitar picos)
+  workflow_dispatch: {} # permite correr manualmente no separador Actions
+
+permissions:
+  contents: write # necessário para publicar no branch output
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: goncalooliveira03
+          outputs: |
+            dist/github-snake.svg?palette=github-light
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
