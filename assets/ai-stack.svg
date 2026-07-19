@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" role="img" aria-labelledby="aiTitle aiDesc">
+  <title id="aiTitle">AI Experience — learning with machines since 2022</title>
+  <desc id="aiDesc">Timeline of AI experience: ChatGPT public launch in 2022, daily assistants Claude and ChatGPT, coding agents Claude Code and Codex with GPT models up to SOL 5.6, and local models Qwen and Hermes with OpenClaw. An animated neural network pulses on the left.</desc>
+  <style>
+    .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+
+    @keyframes flow  { from { stroke-dashoffset: 28; } to { stroke-dashoffset: 0; } }
+    @keyframes nodep { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+    @keyframes rise  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes glowd { 0%, 100% { r: 6; opacity: 0.9; } 50% { r: 8; opacity: 1; } }
+    @keyframes drawl { from { stroke-dashoffset: 220; } to { stroke-dashoffset: 0; } }
+
+    .edge  { stroke: #30363d; stroke-width: 1.6; stroke-dasharray: 5 9; animation: flow 1.6s linear infinite; }
+    .n1 { animation: nodep 2.4s ease-in-out infinite; }
+    .n2 { animation: nodep 2.4s ease-in-out 0.4s infinite; }
+    .n3 { animation: nodep 2.4s ease-in-out 0.8s infinite; }
+    .n4 { animation: nodep 2.4s ease-in-out 1.2s infinite; }
+    .n5 { animation: nodep 2.4s ease-in-out 1.6s infinite; }
+
+    .tline { stroke-dasharray: 220; animation: drawl 1.4s ease-out 0.2s both; }
+    .tl1 { animation: rise 0.5s ease 0.4s both; }
+    .tl2 { animation: rise 0.5s ease 0.9s both; }
+    .tl3 { animation: rise 0.5s ease 1.4s both; }
+    .tl4 { animation: rise 0.5s ease 1.9s both; }
+    .quote { animation: rise 0.6s ease 2.5s both; }
+    .dot { animation: glowd 2.6s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .edge,.n1,.n2,.n3,.n4,.n5,.tline,.tl1,.tl2,.tl3,.tl4,.quote,.dot { animation: none; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="878" height="378" rx="16" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+
+  <!-- header -->
+  <text x="28" y="42" class="sans" font-size="21" font-weight="700" fill="#e6edf3">AI Experience</text>
+  <text x="180" y="42" class="mono" font-size="12" fill="#8b949e">· learning with machines, not just about them</text>
+  <rect x="768" y="24" width="86" height="24" rx="12" fill="#161b22" stroke="#d29922"/>
+  <text x="811" y="40" text-anchor="middle" class="mono" font-size="11" fill="#d29922">EST. 2022</text>
+  <line x1="28" y1="58" x2="852" y2="58" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ================= neural network (left) ================= -->
+  <g>
+    <line class="edge" x1="90" y1="140" x2="170" y2="105"/>
+    <line class="edge" x1="90" y1="140" x2="170" y2="190"/>
+    <line class="edge" x1="90" y1="140" x2="170" y2="275"/>
+    <line class="edge" x1="90" y1="240" x2="170" y2="105"/>
+    <line class="edge" x1="90" y1="240" x2="170" y2="190"/>
+    <line class="edge" x1="90" y1="240" x2="170" y2="275"/>
+    <line class="edge" x1="170" y1="105" x2="250" y2="150"/>
+    <line class="edge" x1="170" y1="190" x2="250" y2="150"/>
+    <line class="edge" x1="170" y1="275" x2="250" y2="230"/>
+    <line class="edge" x1="170" y1="190" x2="250" y2="230"/>
+    <line class="edge" x1="250" y1="150" x2="318" y2="190"/>
+    <line class="edge" x1="250" y1="230" x2="318" y2="190"/>
+
+    <circle class="n1" cx="90"  cy="140" r="8" fill="#58a6ff"/>
+    <circle class="n2" cx="90"  cy="240" r="8" fill="#58a6ff"/>
+    <circle class="n3" cx="170" cy="105" r="8" fill="#bc8cff"/>
+    <circle class="n4" cx="170" cy="190" r="8" fill="#bc8cff"/>
+    <circle class="n5" cx="170" cy="275" r="8" fill="#bc8cff"/>
+    <circle class="n2" cx="250" cy="150" r="8" fill="#3fb950"/>
+    <circle class="n4" cx="250" cy="230" r="8" fill="#3fb950"/>
+    <circle class="n3" cx="318" cy="190" r="9" fill="#d29922"/>
+
+    <text x="204" y="322" text-anchor="middle" class="mono" font-size="11" fill="#8b949e">input → curiosity → output</text>
+  </g>
+
+  <!-- ================= timeline (right) ================= -->
+  <line class="tline" x1="392" y1="92" x2="392" y2="302" stroke="#30363d" stroke-width="2"/>
+
+  <g class="tl1">
+    <circle class="dot" cx="392" cy="100" r="6" fill="#58a6ff"/>
+    <text x="412" y="97" class="mono" font-size="13" font-weight="700" fill="#58a6ff">2022 · first contact</text>
+    <text x="412" y="115" class="sans" font-size="12" fill="#c9d1d9">ChatGPT goes public — AI becomes part of how I study and build</text>
+  </g>
+
+  <g class="tl2">
+    <circle class="dot" cx="392" cy="160" r="6" fill="#3fb950"/>
+    <text x="412" y="157" class="mono" font-size="13" font-weight="700" fill="#3fb950">assistants · daily drivers</text>
+    <text x="412" y="175" class="sans" font-size="12" fill="#c9d1d9">Claude &amp; ChatGPT — thinking partners for studying and side quests</text>
+  </g>
+
+  <g class="tl3">
+    <circle class="dot" cx="392" cy="220" r="6" fill="#bc8cff"/>
+    <text x="412" y="217" class="mono" font-size="13" font-weight="700" fill="#bc8cff">coding agents</text>
+    <text x="412" y="235" class="sans" font-size="12" fill="#c9d1d9">Claude Code · Codex with GPT models, up to SOL 5.6</text>
+  </g>
+
+  <g class="tl4">
+    <circle class="dot" cx="392" cy="280" r="6" fill="#d29922"/>
+    <text x="412" y="277" class="mono" font-size="13" font-weight="700" fill="#d29922">local &amp; open models</text>
+    <text x="412" y="295" class="sans" font-size="12" fill="#c9d1d9">Qwen · Hermes running locally — plus experiments with OpenClaw</text>
+  </g>
+
+  <!-- quote -->
+  <text x="440" y="355" text-anchor="middle" class="sans quote" font-size="13" font-style="italic" fill="#8b949e">"AI doesn't write it for me — it argues with me until the code gets better."</text>
+</svg>

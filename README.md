@@ -19,17 +19,24 @@ I'm **Gonçalo**, a Computer Engineering student from Portugal 🇵🇹.
 
 I'm still early in my journey, and honestly, that's the fun part — everything here is an experiment. I build small things, break them, read the error messages (eventually), and come back knowing a bit more. Main quest: finish the degree. Side quest: build something that survives production.
 
+## 🧠 `$ ai --log`
+
+<div align="center">
+<img src="assets/ai-stack.svg" alt="AI experience timeline: using AI since ChatGPT went public in 2022; daily drivers Claude and ChatGPT; coding agents Claude Code and Codex with GPT models up to SOL 5.6; local models Qwen and Hermes plus OpenClaw experiments." width="880"/>
+</div>
+
+I've been using AI since ChatGPT first went public in 2022, so by now it's baked into how I study and build. Daily drivers: **Claude** and **Claude Code**. I've also worked with **Codex** on GPT models up to **SOL 5.6**, run **Qwen** and **Hermes** locally, and experimented with **OpenClaw**. The tools change every month — the skill I'm actually training is learning fast *with* them, without letting them do the thinking for me.
+
 ## `$ currently-exploring`
 
 ```text
 ┌─ NOW LOADING ────────────────────────────────────────┐
 │ ▸ Django ........... deeper into models, forms, auth │
 │ ▸ Next.js + TS ..... components, routing, deploys    │
+│ ▸ LLM tooling ...... agents, APIs, local models      │
 │ ▸ Git .............. branching without fear          │
 └──────────────────────────────────────────────────────┘
 ```
-
-<!-- TODO(Gonçalo): confirma/ajusta esta lista ao que estás mesmo a estudar este semestre -->
 
 ## `$ cat loadout.txt`
 
@@ -37,9 +44,12 @@ I'm still early in my journey, and honestly, that's the fun part — everything 
 [ USED IN PROJECTS ]   Python · Django · JavaScript · TypeScript
                        React/Next.js · HTML · CSS · SQLite · Git
 
+[ AI TOOLBOX ]         Claude · Claude Code · Codex/GPT · Qwen
+                       Hermes · OpenClaw
+
 [ LEARNING NOW ]       Better Django patterns · TypeScript · REST APIs
 
-[ WANT TO EXPLORE ]    [PLACEHOLDER: ex. Docker, C, mobile — escolhe 2-3]
+[ WANT TO EXPLORE ]    LLM APIs & agents · Docker · C
 ```
 
 ## 🕹️ Side Quests — projects & experiments
@@ -77,8 +87,8 @@ I'm still early in my journey, and honestly, that's the fun part — everything 
 
 - [x] Survive another semester of Computer Engineering
 - [ ] Ship a personal project that isn't coursework
+- [ ] Build something real on top of an LLM API
 - [ ] Write a proper README for every repo (the irony is not lost on me)
-- [ ] <!-- TODO(Gonçalo): acrescenta 1 objetivo real teu -->
 
 ## 📈 Activity
 
@@ -121,7 +131,7 @@ by my first "why does it not work anymore?!" moment. Still chasing that ratio.
 The terminal is always open:
 
 - 💼 LinkedIn: [gonçalo-oliveira](https://www.linkedin.com/in/gon%C3%A7alo-oliveira-92798130a/)
-- 📧 Email: [goncaloro@gmail.com](mailto:goncaloro@gmail.com) <!-- confirma se queres o email público -->
+- 📧 Email: [goncaloro@gmail.com](mailto:goncaloro@gmail.com)
 - 🐙 Right here on [GitHub](https://github.com/goncalooliveira03)
 
 <div align="center">
