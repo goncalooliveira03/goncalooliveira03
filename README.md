@@ -25,7 +25,17 @@ I'm still early in my journey, and honestly, that's the fun part — everything 
 <img src="assets/ai-stack.svg" alt="AI experience timeline: using AI since ChatGPT went public in 2022; daily drivers Claude and ChatGPT; coding agents Claude Code and Codex with GPT models up to SOL 5.6; local models Qwen and Hermes plus OpenClaw experiments." width="880"/>
 </div>
 
-I've been using AI since ChatGPT first went public in 2022, so by now it's baked into how I study and build. Daily drivers: **Claude** and **Claude Code**. I've also worked with **Codex** on GPT models up to **SOL 5.6**, run **Qwen** and **Hermes** locally, and experimented with **OpenClaw**. The tools change every month — the skill I'm actually training is learning fast *with* them, without letting them do the thinking for me.
+I've been using AI since ChatGPT first went public in 2022, so by now it's baked into how I study and build. Daily drivers: **Claude** and **Claude Code**. I've also worked with **Codex** on GPT models up to **SOL 5.6**, run **Qwen** and **Hermes** locally, and experimented with **OpenClaw**. Beyond the models themselves, I build **custom skills for Claude** and wire AI into bigger workflows with tools like **n8n** and **Obsidian**. The tools change every month — the skill I'm actually training is learning fast *with* them, without letting them do the thinking for me.
+
+### `$ ls ai/builds/`
+
+<div align="center">
+<img src="assets/ai-builds.svg" alt="Three AI builds: Shorts Factory, a local multi-agent pipeline that made short-form videos end-to-end (script, images, voice, final cut) and auto-published to YouTube via API — shipped. Jarvis, a personal desktop agent that opened apps and controlled the computer — experiment. An AI trading bot — current build in progress." width="880"/>
+</div>
+
+And I don't just chat with models — I build with them. A local **multi-agent pipeline** that produced Reels/TikTok/Shorts end-to-end (script, images, voice, final cut with animations) and auto-published to YouTube through its API. **Jarvis**, a personal desktop agent that opened apps and ran actions on my computer. And right now, an **AI trading bot** — my current main experiment.
+
+<sub>these builds live off-GitHub for now — repos coming as I clean them up 🧹</sub>
 
 ## `$ currently-exploring`
 
@@ -45,7 +55,7 @@ I've been using AI since ChatGPT first went public in 2022, so by now it's baked
                        React/Next.js · HTML · CSS · SQLite · Git
 
 [ AI TOOLBOX ]         Claude · Claude Code · Codex/GPT · Qwen
-                       Hermes · OpenClaw
+                       Hermes · OpenClaw · Claude skills · n8n · Obsidian
 
 [ LEARNING NOW ]       Better Django patterns · TypeScript · REST APIs
 
@@ -86,8 +96,9 @@ I've been using AI since ChatGPT first went public in 2022, so by now it's baked
 ## 📜 Current Quests
 
 - [x] Survive another semester of Computer Engineering
-- [ ] Ship a personal project that isn't coursework
-- [ ] Build something real on top of an LLM API
+- [x] Build something real with AI agents (see `$ ls ai/builds/` above)
+- [ ] Get the trading bot through a full week of paper trading
+- [ ] Open-source one of my AI builds
 - [ ] Write a proper README for every repo (the irony is not lost on me)
 
 ## 📈 Activity

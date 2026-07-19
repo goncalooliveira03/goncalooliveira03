@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" width="880" height="230" role="img" aria-labelledby="abTitle abDesc">
+  <title id="abTitle">AI builds: Shorts Factory, Jarvis and an AI trading bot</title>
+  <desc id="abDesc">Three project cards. Shorts Factory: a local multi-agent pipeline that produced short-form videos end to end and auto-published to YouTube, shipped. Jarvis: a personal desktop agent that opened apps and controlled the computer, experiment. Trading bot: current build in progress.</desc>
+  <style>
+    .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    @keyframes playp { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+    @keyframes eyes  { 0%, 90%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.12); } }
+    @keyframes draw  { 0% { stroke-dashoffset: 130; } 60% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
+    @keyframes rise  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    .led   { animation: pulse 2s ease-in-out infinite; }
+    .play  { animation: playp 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .eye   { animation: eyes 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .chart { stroke-dasharray: 130; animation: draw 4s ease-in-out infinite; }
+    .c1 { animation: rise 0.5s ease 0.2s both; }
+    .c2 { animation: rise 0.5s ease 0.5s both; }
+    .c3 { animation: rise 0.5s ease 0.8s both; }
+    @media (prefers-reduced-motion: reduce) { .led,.play,.eye,.chart,.c1,.c2,.c3 { animation: none; } }
+  </style>
+
+  <rect x="1" y="1" width="878" height="228" rx="16" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+
+  <!-- ============ card 1: Shorts Factory ============ -->
+  <g class="c1">
+    <rect x="16" y="16" width="272" height="198" rx="12" fill="#010409" stroke="#30363d"/>
+    <rect x="16" y="16" width="272" height="6" rx="3" fill="#f85149"/>
+    <rect x="32" y="36" width="34" height="34" rx="9" fill="#161b22" stroke="#f85149" stroke-width="2"/>
+    <path class="play" d="M 44 45 L 58 53 L 44 61 Z" fill="#f85149"/>
+    <text x="78" y="52" class="sans" font-size="15" font-weight="700" fill="#e6edf3">Shorts Factory</text>
+    <text x="78" y="67" class="mono" font-size="9" fill="#8b949e">MULTI-AGENT PIPELINE</text>
+    <text x="32" y="96"  class="sans" font-size="11" fill="#c9d1d9">Local agents making Reels / TikTok / Shorts</text>
+    <text x="32" y="112" class="sans" font-size="11" fill="#c9d1d9">end-to-end: script → images → voice →</text>
+    <text x="32" y="128" class="sans" font-size="11" fill="#c9d1d9">final cut with animations.</text>
+    <text x="32" y="150" class="sans" font-size="11" fill="#8b949e">Auto-publish to YouTube via API.</text>
+    <circle cx="38" cy="188" r="4" fill="#3fb950" class="led"/>
+    <text x="50" y="192" class="mono" font-size="10" fill="#3fb950">SHIPPED · RAN FOR REAL</text>
+  </g>
+
+  <!-- ============ card 2: Jarvis ============ -->
+  <g class="c2">
+    <rect x="304" y="16" width="272" height="198" rx="12" fill="#010409" stroke="#30363d"/>
+    <rect x="304" y="16" width="272" height="6" rx="3" fill="#58a6ff"/>
+    <rect x="320" y="36" width="34" height="34" rx="9" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+    <circle class="eye" cx="331" cy="50" r="3.5" fill="#58a6ff"/>
+    <circle class="eye" cx="343" cy="50" r="3.5" fill="#58a6ff"/>
+    <path d="M 330 60 Q 337 65 344 60" stroke="#58a6ff" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="366" y="52" class="sans" font-size="15" font-weight="700" fill="#e6edf3">Jarvis</text>
+    <text x="366" y="67" class="mono" font-size="9" fill="#8b949e">PERSONAL DESKTOP AGENT</text>
+    <text x="320" y="96"  class="sans" font-size="11" fill="#c9d1d9">An assistant living on my computer:</text>
+    <text x="320" y="112" class="sans" font-size="11" fill="#c9d1d9">opened apps, moved things around and</text>
+    <text x="320" y="128" class="sans" font-size="11" fill="#c9d1d9">ran actions on the desktop for me.</text>
+    <text x="320" y="150" class="sans" font-size="11" fill="#8b949e">Taught me how agents touch the real OS.</text>
+    <circle cx="326" cy="188" r="4" fill="#58a6ff" class="led"/>
+    <text x="338" y="192" class="mono" font-size="10" fill="#58a6ff">EXPERIMENT · LESSONS KEPT</text>
+  </g>
+
+  <!-- ============ card 3: Trading Bot ============ -->
+  <g class="c3">
+    <rect x="592" y="16" width="272" height="198" rx="12" fill="#010409" stroke="#30363d"/>
+    <rect x="592" y="16" width="272" height="6" rx="3" fill="#d29922"/>
+    <rect x="608" y="36" width="34" height="34" rx="9" fill="#161b22" stroke="#d29922" stroke-width="2"/>
+    <path class="chart" d="M 613 62 L 620 55 L 626 58 L 632 47 L 637 50" stroke="#d29922" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="654" y="52" class="sans" font-size="15" font-weight="700" fill="#e6edf3">Trading Bot</text>
+    <text x="654" y="67" class="mono" font-size="9" fill="#8b949e">CURRENT MAIN BUILD</text>
+    <text x="608" y="96"  class="sans" font-size="11" fill="#c9d1d9">An AI trading bot — signals, strategy and</text>
+    <text x="608" y="112" class="sans" font-size="11" fill="#c9d1d9">risk rules, still very much in the lab.</text>
+    <text x="608" y="128" class="sans" font-size="11" fill="#c9d1d9">Where the AI stack meets real-world data.</text>
+    <text x="608" y="150" class="sans" font-size="11" fill="#8b949e">Goal: survive a week of paper trading.</text>
+    <circle cx="614" cy="188" r="4" fill="#d29922" class="led"/>
+    <text x="626" y="192" class="mono" font-size="10" fill="#d29922">IN PROGRESS · DO NOT FEED</text>
+  </g>
+</svg>
