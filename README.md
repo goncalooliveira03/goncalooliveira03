@@ -120,7 +120,7 @@ by my first "why does it not work anymore?!" moment. Still chasing that ratio.
 
 The terminal is always open:
 
-- 💼 LinkedIn: [PLACEHOLDER: adiciona o link do teu LinkedIn]
+- 💼 LinkedIn: [gonçalo-oliveira](https://www.linkedin.com/in/gon%C3%A7alo-oliveira-92798130a/)
 - 📧 Email: [goncaloro@gmail.com](mailto:goncaloro@gmail.com) <!-- confirma se queres o email público -->
 - 🐙 Right here on [GitHub](https://github.com/goncalooliveira03)
 
