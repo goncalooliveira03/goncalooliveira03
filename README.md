@@ -92,7 +92,7 @@ I'm still early in my journey, and honestly, that's the fun part — everything 
 ## 🧾 Dev Log — auto-updated
 
 <!--DEVLOG:START-->
-> Loading first log entry… (the update workflow will replace this line)
+> **week 29** — Semester status: debugging my degree, one deadline at a time.
 <!--DEVLOG:END-->
 
 <sub>↑ this quote rotates weekly via GitHub Actions, so the profile never fully sleeps.</sub>
