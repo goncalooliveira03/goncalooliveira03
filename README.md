@@ -113,7 +113,7 @@ And I don't just chat with models — I build with them. A local **multi-agent p
 ## 🧾 Dev Log — auto-updated
 
 <!--DEVLOG:START-->
-> **week 32** — Today's status: it compiles. Asking for more would be greedy.
+> **week 33** — Lesson of the week: the bug is never where you are looking. Ever.
 <!--DEVLOG:END-->
 
 <sub>↑ this quote rotates weekly via GitHub Actions, so the profile never fully sleeps.</sub>
