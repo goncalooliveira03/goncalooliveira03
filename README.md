@@ -113,7 +113,7 @@ And I don't just chat with models — I build with them. A local **multi-agent p
 ## 🧾 Dev Log — auto-updated
 
 <!--DEVLOG:START-->
-> **week 34** — Currently turning coffee into questionable commits.
+> **week 35** — Still waiting for the code to work on the first try. Any day now.
 <!--DEVLOG:END-->
 
 <sub>↑ this quote rotates weekly via GitHub Actions, so the profile never fully sleeps.</sub>
