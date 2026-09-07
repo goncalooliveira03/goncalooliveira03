@@ -113,7 +113,7 @@ And I don't just chat with models — I build with them. A local **multi-agent p
 ## 🧾 Dev Log — auto-updated
 
 <!--DEVLOG:START-->
-> **week 36** — Deleted 40 lines of code today. Best feature I ever shipped.
+> **week 37** — Semester status: debugging my degree, one deadline at a time.
 <!--DEVLOG:END-->
 
 <sub>↑ this quote rotates weekly via GitHub Actions, so the profile never fully sleeps.</sub>
